@@ -24,7 +24,7 @@ if st.button('Predict'):
     prediction = model.predict(user_input)
     species_mapping = {0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'F'}
     
-    predicted_student_performance = species_mapping.get(int(prediction[0]), 'unknown')
+    predicted_student_performance = performance_mapping.get(int(prediction[0]), 'unknown')
     st.write(f'The predicted species is: {predicted_student_performance}')
 
     # Footer
