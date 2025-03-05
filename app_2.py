@@ -15,7 +15,7 @@ st.write('Please input the following parameter:')
 math_score = st.number_input('Math Score', min_value=0, max_value=100, step=1)
 reading_score = st.number_input('Reading Score', min_value=0, max_value=100, step=1)
 writing_score = st.number_input('Writing Score', min_value=0, max_value=100, step=1)
-final_score = st.number_input('Final Score', min_value=0, max_value=100, step=1)
+gender_male_female = st.number_input('Gender', min_value=0, max_value=1, step=1)
 
 # Prediction
 
