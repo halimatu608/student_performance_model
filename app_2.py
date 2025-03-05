@@ -3,7 +3,7 @@ import streamlit as st
 import numpy as np
 # Loading the model
 
-with open('first_student_performance_model.pkl', 'rb') as file:
+with open('first_student_performance.pkl', 'rb') as file:
     model= pickle.load(file)
 
 with open("scaler.pkl", "rb") as scale_file:
