@@ -23,7 +23,7 @@ if st.button('Predict'):
     user_input = np.array([[math_score, reading_score, writing_score, final_score]])
     prediction = model.predict(user_input)
     
-    performance_mapping = {'A': 'Excellent','B': 'Very Good','C': 'Good','D': 'Pass','F': 'Fail'}
+    performance_mapping = {0: 'A - Excellent',1: 'B - Very Good',2: 'C - Good',3: 'D - Pass',4: 'F - Fail'}
     
     predicted_student_performance = performance_mapping.get(int(prediction[0]), 'unknown')
     st.write(f'The predicted performance is: {predicted_student_performance}')
