@@ -12,7 +12,7 @@ with open("scaler.pkl", "rb") as scale_file:
 # streamlit UI 
 
 st.title('Student Performance Prediction App')
-st.write('This app predicts the student performance')
+st.write('This app predicts student performance.')
 st.write('Please input the following parameter:')
 
 math_score = st.number_input('Math Score', min_value=0, max_value=100, step=1)
